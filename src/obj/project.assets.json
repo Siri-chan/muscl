@@ -8,29 +8,23 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\a_bad\\.nuget\\packages\\": {}
+    "C:\\Users\\abads\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\dev\\muscl\\src\\muscl.csproj",
+      "projectUniqueName": "C:\\Users\\abads\\Documents\\GitHub\\muscl\\src\\muscl.csproj",
       "projectName": "muscl",
-      "projectPath": "E:\\dev\\muscl\\src\\muscl.csproj",
-      "packagesPath": "C:\\Users\\a_bad\\.nuget\\packages\\",
-      "outputPath": "E:\\dev\\muscl\\src\\obj\\",
+      "projectPath": "C:\\Users\\abads\\Documents\\GitHub\\muscl\\src\\muscl.csproj",
+      "packagesPath": "C:\\Users\\abads\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\abads\\Documents\\GitHub\\muscl\\src\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\a_bad\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\abads\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
-      "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://nuget.emzi0767.com/api/v3/index.json": {}
-      },
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",

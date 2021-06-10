@@ -38,7 +38,6 @@ namespace muscl
                     exitCode = m.Read(args[a + 1]);
                     a++;
                 }
-                /*
                 else if (args[a] == "-z" || args[a] == "--zip")
                 {
                     exitCode = m.Zip(args[a + 1], args[a + 2]);
@@ -51,7 +50,6 @@ namespace muscl
                     a++;
                     a++;
                 }
-                */
                 else {
                     Console.Write("\nArgument \"{0}\" not recognised.", args[a]);
                 }
