@@ -14,6 +14,7 @@ namespace muscl
 {
     class main
     {
+        const string ver = "0.1-dev";
         public static main m = new main();
         static void Main(string[] args)
         {
@@ -41,14 +42,12 @@ namespace muscl
                 else if (args[a] == "-z" || args[a] == "--zip")
                 {
                     exitCode = m.Zip(args[a + 1], args[a + 2]);
-                    a++;
-                    a++;
+                    a+=2;
                 }
                 else if (args[a] == "-uz" || args[a] == "--unzip")
                 {
                     exitCode = m.UnZip(args[a + 1], args[a + 2]);
-                    a++;
-                    a++;
+                    a+=2;
                 }
                 else {
                     Console.Write("\nArgument \"{0}\" not recognised.", args[a]);
@@ -56,7 +55,7 @@ namespace muscl
             }
             /*
             if(false){
-            // Exit Codes: 0 - Success; 1 - Unknown Failure;
+            // Exit Codes: 0 - Success; 1 - Unknown Failure; 2 - Not Administrator; 3 - Undeclared/Damaged Variable;
             Console.Write("\nExited with exit code " + exitCode + ". \n Press Any Key to Close.");
             }
             */
@@ -134,8 +133,11 @@ namespace muscl
             return 0;
         }
         int Version(){
-            Console.Write("MUSCL Tool, written by Siri \n Version [0.1]");
+            if(!string.IsNullOrWhiteSpace(ver)){
+            Console.Write("MUSCL Tool, written by Siri \n Version {0}", ver);
             return 0;
+            }
+            return 3;
         }
         int Read(string path){
             if (File.Exists(path))
